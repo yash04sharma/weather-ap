@@ -1,0 +1,123 @@
+/* Default */
+.app {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   background: linear-gradient(135deg, #bdc3c7, #2c3e50);
+
+}
+
+/* ☀️ Sunny */
+.app.sunny {
+  background: linear-gradient(135deg, #fceabb, #f8b500);
+}
+
+/* ☁️ Cloudy */
+.app.cloudy {
+  background: linear-gradient(135deg, #bdc3c7, #2c3e50);
+}
+
+/* 🌧 Rain */
+.app.rain {
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+}
+
+/* 🌙 Night */
+.app.clear {
+  background: linear-gradient(135deg, #141e30, #243b55);
+}
+
+/* ❄️ Mist / Fog */
+.app.mist {
+  background: linear-gradient(135deg, #757f9a, #d7dde8);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: black;
+}
+
+/* Container */
+.container {
+  width: 400px;
+}
+
+/* Search bar */
+.search {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px 0 0 10px;
+}
+
+.search button {
+  padding: 10px 15px;
+  border: none;
+  background: #00c6ff;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 10px 10px 0;
+}
+
+/* Weather Card */
+.weather-card {
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Top section */
+.top {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Middle section */
+.middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.middle img {
+  width: 80px;
+}
+
+.middle h1 {
+  font-size: 40px;
+}
+
+/* Grid section */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+/* Small cards */
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
